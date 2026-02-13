@@ -43,11 +43,37 @@ const TeddyBear = ({ position, scale }) => {
         <meshStandardMaterial color="#000000" />
       </mesh>
       
+      
       {/* Nose */}
       <mesh position={[0, 0.38, 0.22]}>
         <sphereGeometry args={[0.025, 8, 8]} />
         <meshStandardMaterial color="#000000" />
       </mesh>
+      
+      {/* Heart on belly */}
+      <mesh position={[0, 0.05, 0.28]} rotation={[0, 0, 0]}>
+        <sphereGeometry args={[0.08, 16, 16]} />
+        <meshStandardMaterial color="#FF1493" emissive="#FF1493" emissiveIntensity={0.4} />
+      </mesh>
+      <mesh position={[-0.06, 0.1, 0.28]} rotation={[0, 0, 0]}>
+        <sphereGeometry args={[0.05, 16, 16]} />
+        <meshStandardMaterial color="#FF1493" emissive="#FF1493" emissiveIntensity={0.4} />
+      </mesh>
+      <mesh position={[0.06, 0.1, 0.28]} rotation={[0, 0, 0]}>
+        <sphereGeometry args={[0.05, 16, 16]} />
+        <meshStandardMaterial color="#FF1493" emissive="#FF1493" emissiveIntensity={0.4} />
+      </mesh>
+      
+      {/* Bow tie */}
+      <mesh position={[0, 0.25, 0.2]} rotation={[0, 0, 0]}>
+        <boxGeometry args={[0.15, 0.06, 0.04]} />
+        <meshStandardMaterial color="#FF69B4" emissive="#FF69B4" emissiveIntensity={0.3} />
+      </mesh>
+      <mesh position={[0, 0.25, 0.2]} rotation={[0, 0, 0]}>
+        <sphereGeometry args={[0.03, 8, 8]} />
+        <meshStandardMaterial color="#FFD700" emissive="#FFD700" emissiveIntensity={0.4} />
+      </mesh>
+
       
       {/* Arms */}
       <mesh position={[-0.25, 0.05, 0]} rotation={[0, 0, 0.5]}>
