@@ -106,7 +106,7 @@ const Overlay = () => {
             padding: '1rem',
             animation: 'pulse 2s infinite'
         }}>
-            I Love You Babe, Date Tayo Mamaya Kasama Nido ! ❤️
+            I love you babe, Date tayo mamaya kasama nido ! ❤️
         </h1>
         <p style={{ fontSize: '1.5rem', marginTop: '1rem', color: 'white' }}>Happy Valentine's Day!</p>
       </div>
