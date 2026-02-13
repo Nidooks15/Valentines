@@ -33,20 +33,34 @@ const TeddyBear = ({ position, scale }) => {
         <meshStandardMaterial color="#FFE4E1" emissive="#FFE4E1" emissiveIntensity={0.1} roughness={0.6} />
       </mesh>
       
-      {/* Eyes */}
+      
+      {/* Eyes - Bigger and more visible */}
       <mesh position={[-0.08, 0.45, 0.18]}>
-        <sphereGeometry args={[0.03, 8, 8]} />
+        <sphereGeometry args={[0.05, 8, 8]} />
         <meshStandardMaterial color="#000000" />
       </mesh>
       <mesh position={[0.08, 0.45, 0.18]}>
+        <sphereGeometry args={[0.05, 8, 8]} />
+        <meshStandardMaterial color="#000000" />
+      </mesh>
+      
+      {/* Nose */}
+      <mesh position={[0, 0.38, 0.22]}>
         <sphereGeometry args={[0.03, 8, 8]} />
         <meshStandardMaterial color="#000000" />
       </mesh>
       
-      
-      {/* Nose */}
-      <mesh position={[0, 0.38, 0.22]}>
-        <sphereGeometry args={[0.025, 8, 8]} />
+      {/* Smile - curved mouth */}
+      <mesh position={[-0.04, 0.32, 0.2]}>
+        <sphereGeometry args={[0.015, 8, 8]} />
+        <meshStandardMaterial color="#000000" />
+      </mesh>
+      <mesh position={[0, 0.31, 0.21]}>
+        <sphereGeometry args={[0.015, 8, 8]} />
+        <meshStandardMaterial color="#000000" />
+      </mesh>
+      <mesh position={[0.04, 0.32, 0.2]}>
+        <sphereGeometry args={[0.015, 8, 8]} />
         <meshStandardMaterial color="#000000" />
       </mesh>
       
