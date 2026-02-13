@@ -9,17 +9,19 @@ const Overlay = () => {
   const audioRef = useRef(null);
 
   const handleNoHover = () => {
-    // Constrain movement to keep it within the viewport
-    // Button starts at bottom-center
-    // X: Move left/right but keep within screen width (with padding)
-    const padding = 100;
-    const maxX = window.innerWidth / 2 - padding;
-    const x = (Math.random() * 2 - 1) * maxX;
-
-    // Y: Move UP primarily (negative Y) because it starts at the bottom
-    // Range: -screenHeight to -50
-    const maxY = window.innerHeight - padding * 2;
-    const y = -Math.random() * maxY;
+    // Keep button visible by constraining to a safe zone
+    // Button dimensions: roughly 150px wide, 60px tall
+    const buttonWidth = 150;
+    const buttonHeight = 60;
+    const padding = 20;
+    
+    // Calculate safe movement range
+    const maxX = (window.innerWidth / 2) - buttonWidth - padding;
+    const maxY = (window.innerHeight / 2) - buttonHeight - padding;
+    
+    // Random position within safe bounds
+    const x = (Math.random() * 2 - 1) * Math.max(maxX, 50);
+    const y = (Math.random() * 2 - 1) * Math.max(maxY, 50);
 
     setNoButtonPosition({ x, y });
   };
