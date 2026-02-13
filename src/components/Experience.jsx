@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { OrbitControls, Stars, Environment, Float, Sparkles } from '@react-three/drei';
 import Heart from './Heart';
 import Flowers from './Flowers';
+import TeddyBears from './TeddyBears';
 
 const Experience = () => {
     return (
@@ -19,6 +20,7 @@ const Experience = () => {
             <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
             <Sparkles count={100} scale={10} size={2} speed={0.4} opacity={0.5} color="#ffb6c1" />
             <Flowers count={30} />
+            <TeddyBears count={8} />
 
             {/* Objects */}
             <Float speed={1.5} rotationIntensity={0.5} floatIntensity={0.5}>
