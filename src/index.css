@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  overflow: hidden;
+  position: absolute; /* Ensure it stays put */
+  top: 0;
+  left: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #1a0b1a; /* Match canvas background */
+}
