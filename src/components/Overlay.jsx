@@ -106,7 +106,7 @@ const Overlay = () => {
             padding: '1rem',
             animation: 'pulse 2s infinite'
         }}>
-            I love you babe, date tayo mamaya kasama si nido ! ❤️
+            Tara kape tayo? ! ❤️
         </h1>
         <p style={{ fontSize: '1.5rem', marginTop: '1rem', color: 'white' }}>Happy Valentine's Day!</p>
       </div>
@@ -153,7 +153,7 @@ const Overlay = () => {
         textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
         padding: '0 1rem'
       }}>
-        Will you be my Valentine?
+        Gusto mo Lumabas?
       </h1>
       <div style={{ display: 'flex', gap: '2rem', pointerEvents: 'auto', flexWrap: 'wrap', justifyContent: 'center' }}>
         <motion.button
